@@ -3,8 +3,6 @@ title: Jithin D. George
 email: jithindg@uw.edu
 description: > # this means to ignore newlines until "baseurl:"
   I'm a masters student in the Department of Applied Mathematics at the University of Washington.
-  Here's how you link to a [webpage in your site](/pubs/), and
-here's a link to an [external site](https://www.google.com)
  
 # baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "https://dirivian.github.io" # the base hostname & protocol for your site
@@ -14,4 +12,4 @@ gems:
   - jekyll-sitemap
 
 # Build settings
-theme: jekyll-theme-minimal
+theme: minima #jekyll-theme-minimal

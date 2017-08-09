@@ -1,16 +1,16 @@
 ---
 layout: page
-title: Education
+title: Background
 permalink: /education/
 ---
 
-##Education
+## Education
 ---
 
 * M.S Applied Mathematics, University of Washington (Expected June 2018)
 * B.E (Hons.) Mechanical Engineering, Birla Institute of Technology & Science (BITS)- Pilani (2011)
 
-##Positions
+## Positions
 ---
 
 * M.S Applied Mathematics, University of Washington (Expected June 2018)

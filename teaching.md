@@ -10,8 +10,7 @@ I have been a Teaching Assistant (TA) for the following courses
 
 * [PHY 121 Mechanics](http://courses.washington.edu/phys121z/index.php)
 
-    25                                           25
-    
+
 Some of my presentations on interesting topics:
 * [Computational techniques for problems in civil engineering: Finite Volumes](pdfs/marian_final.pdf)
 

@@ -14,11 +14,11 @@ permalink: /education/
 ### Positions
 
 
-* NPOL Project Assistant                                               \ June 2015 -July 2016
+*   NPOL Project Assistant                                               \ June 2015 -July 2016
 : Tata Institute of Fundamental Research, Centre for Applicable Mathematics
 
-* Member of the Noise Vibration and Harshness team                  \ June 2014 -December 2014
+*   Member of the Noise Vibration and Harshness team                  \ June 2014 -December 2014
 : Altair Engineering India Pvt. Ltd.
 
-* Intern                                                                         \ Summer 2013
+*   Intern                                                                         \ Summer 2013
 : Madras Atomic Power Station

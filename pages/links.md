@@ -1,6 +1,5 @@
 ---
-layout: page
-title: Important Links
+layout: default
 permalink: /pages/links/
 ---
 

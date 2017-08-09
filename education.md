@@ -11,7 +11,7 @@ permalink: /education/
 
 * B.E (Hons.) in Mechanical Engineering, Birla Institute of Technology & Science (BITS)- Pilani, 2011
 
-### Positions
+### Appointments
 
 
 *   NPOL Project Assistant                                               \ June 2015 -July 2016

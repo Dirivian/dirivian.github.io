@@ -2,8 +2,7 @@
 title: Jithin D. George
 email: jithindg@uw.edu
 description: > # this means to ignore newlines until "baseurl:"
-  I'm a masters student in the Department of Applied Mathematics at the University of Washington.
-* 20 piles of laundry
+  I'm a Masters student in the Department of Applied Mathematics at the University of Washington.
  
 # baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "https://dirivian.github.io" # the base hostname & protocol for your site
@@ -13,4 +12,4 @@ gems:
   - jekyll-sitemap
 
 # Build settings
-theme: jekyll-theme-minimal
+theme: minima#jekyll-theme-minimal

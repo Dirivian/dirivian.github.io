@@ -12,4 +12,4 @@ gems:
   - jekyll-sitemap
 
 # Build settings
-theme: minima#jekyll-theme-minimal
+theme: minima #jekyll-theme-minimal

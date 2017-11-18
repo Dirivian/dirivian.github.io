@@ -5,7 +5,6 @@ permalink: /Presentations/
 ---
 
 
-
 Some of my presentations on interesting topics:
 * [Exploration of chaos in shock waves](pdfs/Presentation_575.pdf) -Click on movie to see the videos.
 * [Computational techniques for problems in civil engineering: Finite Volumes](pdfs/Civil_clawpack.pdf)

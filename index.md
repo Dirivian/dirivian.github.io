@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <script src="http://vjs.zencdn.net/4.0/video.js"></script>
 
 <video id="pelican-installation" class="video-js vjs-default-skin" controls

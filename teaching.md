@@ -3,6 +3,8 @@ layout: page
 title: Teaching
 permalink: /teaching/
 ---
+I am currently a TA for AMATH 351. These are my [notes](/pdfs/AMATH 351 - Series Solutions.pdf) for the classes on 11/20 and 11/22.
+
 
 I have been a Teaching Assistant (TA) for the following courses
 * [AMATH 301 - Beginning Scientific Computing](http://courses.washington.edu/am301/):
@@ -11,14 +13,5 @@ I have been a Teaching Assistant (TA) for the following courses
 * [PHY 121 Mechanics](http://courses.washington.edu/phys121z/index.php)
 
 
-Some of my presentations on interesting topics:
-* [Exploration of chaos in shock waves](pdfs/Presentation_575.pdf)
-Click on movie to see the videos.
-* [Computational techniques for problems in civil engineering: Finite Volumes](pdfs/Civil_clawpack.pdf)
-* [Modeling Chemotaxis using fractional step approaches](pdfs/Chemotaxis.pdf)
-* [Design of a wall-climbing robot](pdfs/Design.pptx)
-* [Simulating a system for microfluidic recirculation ](pdfs/MEMS.pptx)
-* [Petri Nets](pdfs/Petri_Nets.pptx)
-Sadly, the simulations were separate from the presentation in this one.
 
 More important links [here](/pages/links)

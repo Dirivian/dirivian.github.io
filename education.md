@@ -11,15 +11,6 @@ permalink: /education/
 
 * B.E (Hons.) in Mechanical Engineering, Birla Institute of Technology & Science (BITS)- Pilani, *2011*
 
-### Appointments
 
 
-
-*   [NPOL](https://www.drdo.gov.in/drdo/labs1/NPOL/English/indexnew.jsp?pg=about-lab.jsp) Project Assistant
-: Tata Institute of Fundamental Research, Centre for Applicable Mathematics, *June 2015 -July 2016*.
-
-  *   Member of the Noise Vibration and Harshness (NVH) team
-  : Altair Engineering India Pvt. Ltd, *June 2014 -December 2014*.
-
-*   Practice-School Intern
-: Madras Atomic Power Station, *Summer 2013*
+You can find more information in my [CV](pdfs/CV_Jithin.pdf).

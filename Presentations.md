@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Presentations
 permalink: /Presentations/
 ---
 

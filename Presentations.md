@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /pages/Presentations/
+permalink: /Presentations/
 ---
 
 

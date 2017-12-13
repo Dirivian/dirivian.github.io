@@ -14,3 +14,5 @@ Some of my presentations on interesting topics:
 * [Petri Nets](pdfs/Petri_Nets.pptx) -Sadly, the simulations were separate from the presentation in this one.
 * A very descriptive Jupyter notebook on [Mathematical Ecology](https://github.com/Dirivian/Jupyter_notebooks/blob/master/Math_Ecology.ipynb).
 
+
+You can find more information in my [CV](pdfs/CV_Jithin.pdf).

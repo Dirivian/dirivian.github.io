@@ -12,6 +12,8 @@ I have been a Teaching Assistant (TA) for the following courses
 
 * [PHY 121 Mechanics](http://courses.washington.edu/phys121z/index.php)
 
+* [STAT 311 - Essentials of Statistical Methods](https://mdkarcher.github.io/StatLabs/index.html)
+
 
 
 More important links [here](/pages/links)

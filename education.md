@@ -6,6 +6,7 @@ permalink: /education/
 
 ### Education
 
+* Ph.D in Engineering Sciences and Applied Mathematics, Northwestern University *(Expected 2023)*
 
 * M.S in Applied Mathematics, University of Washington *(Expected 2018)*
 

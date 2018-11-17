@@ -14,6 +14,7 @@ I have been a Teaching Assistant (TA) for the following courses
 
 * [STAT 311 - Essentials of Statistical Methods](https://mdkarcher.github.io/StatLabs/index.html)
 
-
+* [AMATH 351 - Differential Equations And Applications](https://amath.washington.edu/courses/2017/autumn/amath/351/a):
+These are my [notes](/pdfs/AMATH 351 - Series Solutions.pdf) for the classes on 11/20 and 11/22.
 
 More important links [here](/pages/links)

@@ -3,7 +3,7 @@ layout: page
 title: Teaching
 permalink: /teaching/
 ---
-I am currently a TA for AMATH 351. These are my [notes](/pdfs/AMATH 351 - Series Solutions.pdf) for the classes on 11/20 and 11/22.
+
 
 
 I have been a Teaching Assistant (TA) for the following courses

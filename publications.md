@@ -3,9 +3,9 @@ layout: page
 title: Publications
 permalink: /pubs/
 ---
-* Jithin D. George, David I. Ketcheson, and Randall J. LeVeque. "[Shoaling on Steep Continental Slopes: Relating Transmission and Reflection Coefficients to Green's Law.] (https://arxiv.org/abs/1901.04148)" .
+* Jithin D. George, David I. Ketcheson, and Randall J. LeVeque. "[Shoaling on Steep Continental Slopes: Relating Transmission and Reflection Coefficients to Green's Law.](https://arxiv.org/abs/1901.04148)" .
 
-* Jithin D. George, David I. Ketcheson, and Randall J. LeVeque. "[A characteristics-based approximation for wave scattering from an arbitrary obstacle in one dimension.] (https://arxiv.org/abs/1901.04158)" .
+* Jithin D. George, David I. Ketcheson, and Randall J. LeVeque. "[A characteristics-based approximation for wave scattering from an arbitrary obstacle in one dimension.](https://arxiv.org/abs/1901.04158)" .
 
 * Jithin D. George . "[A visual way to teach the Fast Fourier Transform.](https://sinews.siam.org/Details-Page/a-visual-way-to-teach-the-fast-fourier-transform)" SIAM News (2018).
 

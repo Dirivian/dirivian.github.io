@@ -3,7 +3,7 @@ layout: page
 permalink: /antibiotics/
 ---
 
-### Minimum Inhibition Concentration for Antibiotics
+
 
 ![Drag Racing](antibio.png)
 

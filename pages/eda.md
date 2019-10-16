@@ -48,6 +48,11 @@ Doesn't help much. I also learnt at this point that even though there were aroun
 
 The plot above shows the most significant earthquakes spaced out. So, one question I want to ask is if the most significant earthquakes occur in the same location as the non-significant ones. So, it seems the most significant earthquakes (sign. >700) appear here.
 
-![most_sig](Most_sig.png) ![least_sig](Least_sig.png)
+
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![most_sig](Most_sig.png) |  ![least_sig](Least_sig.png)
+
+
 
 

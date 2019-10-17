@@ -49,11 +49,13 @@ Doesn't help much. I also learnt at this point that even though there were aroun
 The plot above shows the most significant earthquakes spaced out. So, one question I want to ask is if the most significant earthquakes (>700) occur in the same location as the least significant ones (<100). Please note that the significance of the earthquake is encoded in the plot of the most significant earthquakes to visualize significance but not in the least-significant to have a measure of count. 
 
 
-<img src="pages/Most_sig.png" width="425"/> <img src="pages/Least_sig.png" width="425"/> 
+<img src="https://dirivian.github.io/pages/Most_sig.png" width="425"/> <img src="https://dirivian.github.io/pages/Least_sig.png" width="425"/> 
 
 Seemingly not. Most of the least significant earthquakes happen to be in the US. Let's see what happen when I graph the earthquakes of medium significance
 
 ![med_sig](med_sig.png)
+
+
 These seem to be spread out more globally. So, this might be an indication that minor tremors in the US are reported well as opposed to other countries.
 Going back to the plot of significance of earthquakes over time, let's take the most significant earthquakes and see if the previous 10 earthquakes were nearby.
 

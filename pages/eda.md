@@ -80,7 +80,7 @@ Looking at earthquakes 3 and 4 , we see the same thing. Maybe earthquake 1 was a
 
  <img src="earthquake_4.png" width="725"/>
 
-Earthquake 4 is interesting. I am unable to tell which one of the dark blue spots is the big one. If it's the one near Alaska, then that supports the idea that big earthquakes have small ones in the vicinity right before them.
+Earthquake 5 is interesting. I am unable to tell which one of the dark blue spots is the big one. If it's the one near Alaska, then that supports the idea that big earthquakes have small ones in the vicinity right before them.
 
  <img src="earthquake_5.png" width="725"/>
 So, I plot the big one in red.

@@ -67,9 +67,7 @@ The circumference of earth is 24,000 km. So, the maximum distance between two po
 Here, the earthquakes are plotted with their color going from blue to yellow showing how long before the big significant earthquake one that particular earthquake happened.
 So, the big one would of course have a dark blue color.
 
-Looking at earthquake 1  
-
-<img src="earthquake_1_1.png" width="425"/> <img src="earthquake_1_2.png" width="425"/> 
+Looking at earthquake 1 which seems to be near Japan, it seems that the recent earthquakes occur near the US rather than nearby. 
 
  <img src="earthquake_1_2.png" width="725"/> 
 

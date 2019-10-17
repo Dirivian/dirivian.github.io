@@ -49,7 +49,7 @@ Doesn't help much. I also learnt at this point that even though there were aroun
 The plot above shows the most significant earthquakes spaced out. So, one question I want to ask is if the most significant earthquakes (>700) occur in the same location as the least significant ones (<100). Please note that the significance of the earthquake is encoded in the plot of the most significant earthquakes to visualize significance but not in the least-significant to have a measure of count. 
 
 
-<img src="Most_sig.png" width="425"/> <img src="Least_sig.png" width="425"/> 
+<img src="pages/Most_sig.png" width="425"/> <img src="pages/Least_sig.png" width="425"/> 
 
 Seemingly not. Most of the least significant earthquakes happen to be in the US. Let's see what happen when I graph the earthquakes of medium significance
 
@@ -69,32 +69,32 @@ So, the big one would of course have a dark blue color.
 
 Looking at earthquake 1 which seems to be near Japan, it seems that the recent earthquakes occur near the US rather than nearby. 
 
- <img src="earthquake_1_2.png" width="725"/> 
+ <img src="https://dirivian.github.io/pages/earthquake_1_2.png" width="725"/> 
 
 Looking at earthquake 2, we see that there are earthquakes in the vicinity just before the big one happens. 
 
- <img src="earthquake_2.png" width="725"/>
+ <img src="https://dirivian.github.io/pages/earthquake_2.png" width="725"/>
 
 Looking at earthquakes 3 and 4 , we see the same thing. Maybe earthquake 1 was an outlier?
- <img src="earthquake_3.png" width="725"/>
+ <img src="https://dirivian.github.io/pages/earthquake_3.png" width="725"/>
 
- <img src="earthquake_4.png" width="725"/>
+ <img src="https://dirivian.github.io/pages/earthquake_4.png" width="725"/>
 
 Earthquake 5 is interesting. I am unable to tell which one of the dark blue spots is the big one. If it's the one near Alaska, then that supports the idea that big earthquakes have small ones in the vicinity right before them.
 
- <img src="earthquake_5.png" width="725"/>
+ <img src="https://dirivian.github.io/pages/earthquake_5.png" width="725"/>
 So, I plot the big one in red.
- <img src="earthquake_5_1.png" width="725"/>
+ <img src="https://dirivian.github.io/pages/earthquake_5_1.png" width="725"/>
 
 Sadly, it's the one near South America with no earthquakes in its vicinity. So, maybe 'big ones' happening in the US seem to have earthquakes preceding it in the vicinity because there is just so much US data in the dataset.
 
 Earthquake 6 is the biggest earthquake by far and it doesn't show any earthquakes near where it occured in Italy. Note that earthquakes seem to be a dime a dozen in the US in almost every graph. 
 
- <img src="earthquake_6.png" width="725"/>
+ <img src="https://dirivian.github.io/pages/earthquake_6.png" width="725"/>
 
 Earthquake 7 takes place in Burma and shows no earthquake in its vicinity.
 
- <img src="earthquake_7.png" width="725"/>
+ <img src="https://dirivian.github.io/pages/earthquake_7.png" width="725"/>
 
 
 So, that concludes this data exploration. From this limited dataset, we don't see anything conclusive about big earthquakes being preceded by smaller ones nearby.

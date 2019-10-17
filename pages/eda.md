@@ -71,7 +71,7 @@ Looking at earthquake 1
 
 <img src="earthquake_1_1.png" width="425"/> <img src="earthquake_1_2.png" width="425"/> 
 
- <img src="earthquake_2_2.png" width="425"/> 
+ <img src="earthquake_1_2.png" width="725"/> 
 
 
 

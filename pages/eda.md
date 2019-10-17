@@ -46,13 +46,35 @@ Doesn't help much. I also learnt at this point that even though there were aroun
 
 ![day_epo_sig](day_epo_sig.png)
 
-The plot above shows the most significant earthquakes spaced out. So, one question I want to ask is if the most significant earthquakes occur in the same location as the non-significant ones. So, it seems the most significant earthquakes (sign. >700) appear here.
-
-
-Solarized dark             |  Solarized Ocean
-:-------------------------:|:-------------------------:
-![most_sig](Most_sig.png) |  ![least_sig](Least_sig.png)
-
+The plot above shows the most significant earthquakes spaced out. So, one question I want to ask is if the most significant earthquakes (>700) occur in the same location as the least significant ones (<100). Please note that the significance of the earthquake is encoded in the plot of the most significant earthquakes to visualize significance but not in the least-significant to have a measure of count. 
 
 
 <img src="Most_sig.png" width="425"/> <img src="Least_sig.png" width="425"/> 
+
+Seemingly not. Most of the least significant earthquakes happen to be in the US. Let's see what happen when I graph the earthquakes of medium significance
+
+![med_sig](med_sig.png)
+These seem to be spread out more globally. So, this might be an indication that minor tremors in the US are reported well as opposed to other countries.
+Going back to the plot of significance of earthquakes over time, let's take the most significant earthquakes and see if the previous 10 earthquakes were nearby.
+
+![day_epo_sig](day_epo_sig.png)
+
+There are 7 earthquakes with significance over 700.
+ 
+Let us analyze the first one first. I initially thought about taking the previous 10 earthquakes but that may not be right if we want to measure impact. Maybe we should consider earthquakes in the last hour or the last two hours or maybe the last day? My rationale is that earthquakes are seismic waves that travel at 1-5 km/s depending on land or water. 
+The circumference of earth is 24,000 km. So, the maximum distance between two points would be 12,000 km. An earthquake would traverse that distance in around 80 mins. So, looking at earthquakes occuring an hour or two before should be sufficient.
+
+Here, the earthquakes are plotted with their radius as the significance and the color going from blue to yellow showing how long before the big one that particular earthquake happened.
+So, the big one would of course have a dark blue color.
+
+Looking at earthquake 1  
+
+<img src="earthquake_1_1.png" width="425"/> <img src="earthquake_1_2.png" width="425"/> 
+
+ <img src="earthquake_2_2.png" width="425"/> 
+
+
+
+
+
+

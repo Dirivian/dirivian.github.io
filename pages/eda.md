@@ -64,7 +64,7 @@ There are 7 earthquakes with significance over 700.
 Let us analyze the first one first. I initially thought about taking the previous 10 earthquakes but that may not be right if we want to measure impact. Maybe we should consider earthquakes in the last hour or the last two hours or maybe the last day? My rationale is that earthquakes are seismic waves that travel at 1-5 km/s depending on land or water. 
 The circumference of earth is 24,000 km. So, the maximum distance between two points would be 12,000 km. An earthquake would traverse that distance in around 80 mins. So, looking at earthquakes occuring an hour or two before should be sufficient.
 
-Here, the earthquakes are plotted with their radius as the significance and the color going from blue to yellow showing how long before the big one that particular earthquake happened.
+Here, the earthquakes are plotted with their color going from blue to yellow showing how long before the big significant earthquake one that particular earthquake happened.
 So, the big one would of course have a dark blue color.
 
 Looking at earthquake 1  
@@ -72,6 +72,36 @@ Looking at earthquake 1
 <img src="earthquake_1_1.png" width="425"/> <img src="earthquake_1_2.png" width="425"/> 
 
  <img src="earthquake_1_2.png" width="725"/> 
+
+Looking at earthquake 2, we see that there are earthquakes in the vicinity just before the big one happens. 
+
+ <img src="earthquake_2.png" width="725"/>
+
+Looking at earthquakes 3 and 4 , we see the same thing. Maybe earthquake 1 was an outlier?
+ <img src="earthquake_3.png" width="725"/>
+
+ <img src="earthquake_4.png" width="725"/>
+
+Earthquake 4 is interesting. I am unable to tell which one of the dark blue spots is the big one. If it's the one near Alaska, then that supports the idea that big earthquakes have small ones in the vicinity right before them.
+
+ <img src="earthquake_5.png" width="725"/>
+So, I plot the big one in red.
+ <img src="earthquake_5_1.png" width="725"/>
+
+Sadly, it's the one near South America with no earthquakes in its vicinity. So, maybe 'big ones' happening in the US seem to have earthquakes preceding it in the vicinity because there is just so much US data in the dataset.
+
+Earthquake 6 is the biggest earthquake by far and it doesn't show any earthquakes near where it occured in Italy. Note that earthquakes seem to be a dime a dozen in the US in almost every graph. 
+
+ <img src="earthquake_6.png" width="725"/>
+
+Earthquake 7 takes place in Burma and shows no earthquake in its vicinity.
+
+ <img src="earthquake_7.png" width="725"/>
+
+
+So, that concludes this data exploration. From this limited dataset, we don't see anything conclusive about big earthquakes being preceded by smaller ones nearby.
+
+
 
 
 

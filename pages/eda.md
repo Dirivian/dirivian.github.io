@@ -8,7 +8,7 @@ permalink: /pages/eda/
 Exploratory data analysis - Taking a look at earthquakes.
 
  
-I got interested in the earthquakes dataset from CORGIS. Since I had previously worked on tsunamis, this seemed like
+I got interested in the earthquakes dataset from CORGIS (https://corgis-edu.github.io/corgis/csv/earthquakes/). Since I had previously worked on tsunamis, this seemed like
 a nice field to explore and find some patterns. My vague question right now is to see how the impact and timing of earthquakes depends on previous earthquakes 
 spacially.
 
@@ -21,7 +21,7 @@ The corrected version is below.
 
 ![Correct](correct1.png)
 
-Not all earthquakes are the same. So, I added the 'significance' of the earthquake as the radius in the scatterplot. However, the visualization is less effective.
+Not all earthquakes are the same. The impact of an earthquake depends on its magnitude and depth, both of which are encoded in its signficance. So, I added the 'significance' of the earthquake as the radius in the scatterplot. However, the visualization is less effective.
 
 ![sig2big](sig2big.png)
 
@@ -99,7 +99,24 @@ Earthquake 7 takes place in Burma and shows no earthquake in its vicinity.
  <img src="https://dirivian.github.io/pages/earthquake_7.png" width="725"/>
 
 
-So, that concludes this data exploration. From this limited dataset, we don't see anything conclusive about big earthquakes being preceded by smaller ones nearby.
+From this limited dataset, we don't see anything conclusive about big earthquakes being preceded by smaller ones nearby.
+
+To summarize, we asked two main questions. 
+
+1. Do earthquakes of low significance occur at the same place as those of high significance?
+
+Tabulating our results in one picture, we have the most significant earthquakes in red, the least significant in blue and those of medium significance in green.
+
+![earthquake_sig](earthquake_sig.png)
+
+We see that the earthquakes of high significance don't occur near low significant earthquakes which seem to be mostly in the US probably leading to some skew in the data.
+
+2. Are highly significant earthquakes preceded by earthquakes in the vicinity? 
+
+The Burma case is used as a representative study and the answer seems to be no.
+
+ <img src="https://dirivian.github.io/pages/earthquake_7.png" width="725"/>
+ 
 
 
 

@@ -107,7 +107,7 @@ To summarize, we asked two main questions.
 
 Tabulating our results in one picture, we have the most significant earthquakes in red, the least significant in blue and those of medium significance in green.
 
- <a href="url"><img src="https://dirivian.github.io/pages/earthquake_sig.png" align="left" height="48" width="48" ></a>
+ <a href="url"><img src="https://dirivian.github.io/pages/earthquake_sig.png" align="left" height="750" width="750" ></a>
 
 We see that the earthquakes of high significance don't occur near low significant earthquakes which seem to be mostly in the US probably leading to some skew in the data.
 
@@ -116,7 +116,7 @@ We see that the earthquakes of high significance don't occur near low significan
 The Burma case is used as a representative study and the answer seems to be no.
 
 
- <a href="url"><img src="https://dirivian.github.io/pages/earthquake_7.png" align="left" height="48" width="48" ></a>
+ <a href="url"><img src="https://dirivian.github.io/pages/earthquake_7.png" align="left" height="750" width="750" ></a>
 
 
 

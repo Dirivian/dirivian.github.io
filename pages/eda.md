@@ -5,7 +5,7 @@ permalink: /pages/eda/
 
 
 
-Exploratory data analysis - Taking a look at earthquakes.
+Exploratory data analysis - **Taking a look at earthquakes**.
 
  
 I got interested in the earthquakes dataset from CORGIS (https://corgis-edu.github.io/corgis/csv/earthquakes/). Since I had previously worked on tsunamis, this seemed like
@@ -103,15 +103,15 @@ From this limited dataset, we don't see anything conclusive about big earthquake
 
 To summarize, we asked two main questions. 
 
-1. Do earthquakes of low significance occur at the same place as those of high significance?
+**Do earthquakes of low significance occur at the same place as those of high significance?**
 
 Tabulating our results in one picture, we have the most significant earthquakes in red, the least significant in blue and those of medium significance in green.
 
-![earthquake_sig](earthquake_sig.png)
+![earthquake_sig](earthquake_sig.png=750x)
 
 We see that the earthquakes of high significance don't occur near low significant earthquakes which seem to be mostly in the US probably leading to some skew in the data.
 
-2. Are highly significant earthquakes preceded by earthquakes in the vicinity? 
+**Are highly significant earthquakes preceded by earthquakes in the vicinity?**
 
 The Burma case is used as a representative study and the answer seems to be no.
 

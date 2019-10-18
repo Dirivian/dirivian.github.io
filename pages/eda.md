@@ -107,7 +107,7 @@ To summarize, we asked two main questions.
 
 Tabulating our results in one picture, we have the most significant earthquakes in red, the least significant in blue and those of medium significance in green.
 
-![earthquake_sig](earthquake_sig.png=750x)
+![earthquake_sig](earthquake_sig.png =750x)
 
 We see that the earthquakes of high significance don't occur near low significant earthquakes which seem to be mostly in the US probably leading to some skew in the data.
 

@@ -5,19 +5,7 @@ permalink: /pages/interactive/eda/
 
 
 
-<meta charset="utf-8">
-<style>
-  .state-borders {
-    fill: none;
-    stroke: #fff;
-    stroke-width: 0.5px;
-    stroke-linejoin: round;
-    stroke-linecap: round;
-    pointer-events: none;
-  }
-</style>
 
-<body>
 
   <script src="//d3js.org/d3.v5.min.js"></script>
   <script src="//d3js.org/d3.v4.min.js"></script>

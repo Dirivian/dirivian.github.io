@@ -7,7 +7,6 @@ permalink: /pages/interactive/eda/
 
 
 
-  <script src="//d3js.org/d3.v5.min.js"></script>
   <script src="//d3js.org/d3.v4.min.js"></script>
   <script src="https://d3js.org/topojson.v3.min.js"></script>
   <script src="https://d3js.org/d3-array.v1.min.js"></script>
@@ -29,13 +28,14 @@ permalink: /pages/interactive/eda/
 var projected_transform = function(x,y)
 {return "translate(" + projection([x,y]) + ")";}
 var elephant 
-d3.csv("earthquakes.csv",function(earthquakes){
+d3.csv("https://dirivian.github.io/pages/interactive/earthquakes.csv",function(earthquakes){
   earthquakes.forEach(function(d){
     d["impact.significance"] = +d["impact.significance"]
     d["location.longitude"] = +d["location.longitude"] 
     d["location.latitude"] = +d["location.latitude"] 
   });
   elephant = earthquakes
+console.log(elephant[0])
 
 
 

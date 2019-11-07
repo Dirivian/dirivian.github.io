@@ -83,11 +83,15 @@ $( "#timeamount" ).val( $( "#assists" ).slider( "values", 0 ) +
 
 <p>This is an interactive extension to the exploratory data anaysis done on the earthquakes dataset from CORGIS.
   You can see the exploratory data analysis 
-<a href="https://dirivian.github.io/pages/eda/">here</a>.
+<a href="https://dirivian.github.io/pages/eda/">here</a>. Here, I attempt to improve on the previous analysis through
+interaction especially the ability to filter data through sliders and highlight and bring in more information when needed.</p>
 
+
+<p>
 In this interactive visualization, you can select the significance range of the earthquakes you want to study and 
 also select the time period in which they appear. The circles represent the significance of the earthquakes. Hovering 
-over them highlights them in blue and displays their epicenter.
+over them highlights them in blue and displays their epicenter. This is an ideal interaction for this dataset because it aids in 
+answering questions posed previously about the dependence of highly significant earthquakes on earthquakes nearby in time and space.
 </p>
 
 

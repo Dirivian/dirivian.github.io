@@ -68,7 +68,7 @@ max: 31,
 values: [ 0, 31 ],
 slide: function( event, ui ) {
 $( "#timeamount" ).val( ui.values[ 0 ] + " - " + ui.values[ 1 ] );
-timevalues = [0,31]
+timevalues = ui.values
 filterData("time.epoch", sigvalues, timevalues); } });
 $( "#timeamount" ).val( $( "#assists" ).slider( "values", 0 ) +
 " - " + $( "#assists" ).slider( "values", 1 ) );

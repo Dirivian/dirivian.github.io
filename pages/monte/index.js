@@ -7,8 +7,6 @@ var _react = require("react");
 
 var React = _interopRequireWildcard(_react);
 
-var _reactDom = require("react-dom");
-
 var _reactGoogleCharts = require("react-google-charts");
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
@@ -38,25 +36,30 @@ var barChart = function (_React$Component) {
         calc: 'stringify'
       }]];
 
-      console.log(this.props.pts);
       if (this.props.pts && this.props.pts.length === 0) {
-        data.push(['Left', 0, 'blue', null]);
-        data.push(['Middle', 1, 'red', null]);
-        data.push(['Right', 0, 'yellow', null]);
+        data.push(['Left', 0, '#FF9900', null]);
+        data.push(['Middle', 1, '#3366CC', null]);
+        data.push(['Right', 0, '#109618', null]);
       } else if (this.props.pts) {
+        console.log('from bar');
+        console.log(this.props.pts);
         var idx = this.props.shuffleIndex;
-        console.log(idx);
-        data.push(['Left', this.props.pts[idx]["p_0"], 'blue', null]);
-        data.push(['Middle', this.props.pts[idx]["p_1"], 'red', null]);
-        data.push(['Right', this.props.pts[idx]["p_2"], 'yellow', null]);
+        data.push(['Left Probability', this.props.pts[idx]["p_0"], '#FF9900', null]);
+        data.push(['Middle Probability', this.props.pts[idx]["p_1"], '#3366CC', null]);
+        data.push(['Right Probability', this.props.pts[idx]["p_2"], '#109618', null]);
       }
 
       return React.createElement(
         "div",
-        { className: "my-pretty-chart-container" },
+        { className: "bar-container" },
+        React.createElement(
+          "svg",
+          { className: "probability-line" },
+          React.createElement("line", { x1: "0", y1: "0", x2: "1000", y2: "0", transform: "translate(70, 150)", stroke: "#DC3912", strokeWidth: "2", strokeDasharray: "10 4" })
+        ),
         React.createElement(_reactGoogleCharts.Chart, {
           width: '700px',
-          height: '400px',
+          height: '300px',
           chartType: "ColumnChart",
           loader: React.createElement(
             "div",
@@ -81,7 +84,7 @@ var barChart = function (_React$Component) {
               duration: 400,
               easing: 'out'
             },
-            chartArea: { width: "80%", height: "80%" }
+            chartArea: { width: "80%", height: "70%" }
           }
           // For tests
           , rootProps: { 'data-testid': '6' }
@@ -95,7 +98,7 @@ var barChart = function (_React$Component) {
 
 module.exports = barChart;
 
-},{"react":"react","react-dom":"react-dom","react-google-charts":"/home/jithin/Documents/3card_monte/node_modules/react-google-charts/dist/index.cjs.js"}],"/home/jithin/Documents/3card_monte/components/card.js":[function(require,module,exports){
+},{"react":"react","react-google-charts":"/home/jithin/Documents/3card_monte/node_modules/react-google-charts/dist/index.cjs.js"}],"/home/jithin/Documents/3card_monte/components/card.js":[function(require,module,exports){
 'use strict';
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -316,7 +319,7 @@ var cardVis = function (_D3Component) {
             } else {
               var randCardIndex = 2;
             }
-            console.log(randCardIndex, 234);
+            // console.log(randCardIndex,234)  
           } else {
             var randCardIndex = Math.floor(Math.random() * cards.length);
           }
@@ -401,7 +404,7 @@ var cardVis = function (_D3Component) {
 
           // console.log(props.probability);
 
-          console.log(props.pts);
+          //  console.log(props.pts);
           // console.log('updateprops');
 
           props.updateProps({
@@ -1266,74 +1269,6 @@ var CustomComponent = function (_React$Component) {
 
 module.exports = CustomComponent;
 
-},{"react":"react"}],"/home/jithin/Documents/3card_monte/components/multiRiffle.js":[function(require,module,exports){
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var React = require('react');
-
-var multiRiffle = function (_React$PureComponent) {
-  _inherits(multiRiffle, _React$PureComponent);
-
-  function multiRiffle() {
-    _classCallCheck(this, multiRiffle);
-
-    return _possibleConstructorReturn(this, (multiRiffle.__proto__ || Object.getPrototypeOf(multiRiffle)).apply(this, arguments));
-  }
-
-  _createClass(multiRiffle, [{
-    key: 'render',
-    value: function render() {
-      var _this2 = this;
-
-      var _props = this.props,
-          onClick = _props.onClick,
-          hasError = _props.hasError,
-          updateProps = _props.updateProps,
-          iter = _props.iter,
-          points = _props.points,
-          props = _objectWithoutProperties(_props, ['onClick', 'hasError', 'updateProps', 'iter', 'points']);
-
-      return React.createElement('button', _extends({}, props, { onClick: function onClick() {
-
-          var t = 0;
-          var lastPoint = _this2.props.points[_this2.props.points.length - 1];
-
-          if (lastPoint.y !== 1) {
-            for (var _t = 0; _t < 10; _t++) {
-              setTimeout(function () {
-
-                lastPoint = _this2.props.points[_this2.props.points.length - 1];
-                if (lastPoint.y !== 1) {
-                  updateProps({ iter: _this2.props.iter + 1 });
-                }
-              }, 80 * _t);
-            }
-          }
-        } }));
-    }
-  }]);
-
-  return multiRiffle;
-}(React.PureComponent);
-
-exports.default = multiRiffle;
-
 },{"react":"react"}],"/home/jithin/Documents/3card_monte/components/positionChart.js":[function(require,module,exports){
 "use strict";
 
@@ -1342,8 +1277,6 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _react = require("react");
 
 var React = _interopRequireWildcard(_react);
-
-var _reactDom = require("react-dom");
 
 var _reactGoogleCharts = require("react-google-charts");
 
@@ -1369,6 +1302,8 @@ var positionChart = function (_React$Component) {
     value: function render() {
       var data = [['Number of Shuffles', 'Left Probability', 'Middle Probability', 'Right Probability']];
       for (var i = 0; this.props.pts && i < this.props.pts.length; i++) {
+        console.log('from position');
+        console.log(this.props.pts);
         var point = [i.toString()];
         point.push(this.props.pts[i]["p_0"]);
         point.push(this.props.pts[i]["p_1"]);
@@ -1376,14 +1311,17 @@ var positionChart = function (_React$Component) {
 
         data.push(point);
       }
-      // console.log("--------------");
-      // console.log(data);
       return React.createElement(
         "div",
-        { className: "my-pretty-chart-container" },
+        { className: "position-container" },
+        React.createElement(
+          "svg",
+          { className: "probability-line" },
+          React.createElement("line", { x1: "0", y1: "0", x2: "1000", y2: "0", transform: "translate(70, 150)", stroke: "#DC3912", strokeWidth: "2", strokeDasharray: "10 4" })
+        ),
         React.createElement(_reactGoogleCharts.Chart, {
           width: '700px',
-          height: '400px',
+          height: '300px',
           chartType: "LineChart",
           loader: React.createElement(
             "div",
@@ -1394,6 +1332,7 @@ var positionChart = function (_React$Component) {
           options: {
             title: 'Probabilities of Each Card Being the Winning Card',
             titleTextStyle: { fontSize: 20 },
+            colors: ['#FF9900', '#3366CC', '#109618'],
             legend: { position: 'top' },
             hAxis: {
               title: 'Number of shuffles'
@@ -1402,7 +1341,7 @@ var positionChart = function (_React$Component) {
               title: 'Probability',
               format: 'percent'
             },
-            chartArea: { width: "80%", height: "80%" },
+            chartArea: { width: "80%", height: "70%" },
             pointSize: 8,
             pointShape: 'circle',
             animation: {
@@ -1421,7 +1360,7 @@ var positionChart = function (_React$Component) {
 
 module.exports = positionChart;
 
-},{"react":"react","react-dom":"react-dom","react-google-charts":"/home/jithin/Documents/3card_monte/node_modules/react-google-charts/dist/index.cjs.js"}],"/home/jithin/Documents/3card_monte/node_modules/acorn/dist/acorn.js":[function(require,module,exports){
+},{"react":"react","react-google-charts":"/home/jithin/Documents/3card_monte/node_modules/react-google-charts/dist/index.cjs.js"}],"/home/jithin/Documents/3card_monte/node_modules/acorn/dist/acorn.js":[function(require,module,exports){
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
 	typeof define === 'function' && define.amd ? define(['exports'], factory) :
@@ -97791,7 +97730,7 @@ function extend() {
 },{}],"__IDYLL_AST__":[function(require,module,exports){
 "use strict";
 
-module.exports = [["var", [["name", ["value", "iter"]], ["value", ["value", 0]]], []], ["var", [["name", ["value", "flipvalue"]], ["value", ["value", 0]]], []], ["var", [["name", ["value", "accuracy"]], ["value", ["value", 0.6]]], []], ["var", [["name", ["value", "shufflevalue"]], ["value", ["value", 1]]], []], ["var", [["name", ["value", "points"]], ["value", ["expression", "[{x:0,y:52}]"]]], []], ["var", [["name", ["value", "endPoints"]], ["value", ["expression", "[]"]]], []], ["var", [["name", ["value", "probability"]], ["value", ["expression", "[0,1,0]"]]], []], ["var", [["name", ["value", "pts"]], ["value", ["expression", "[{p_0:0, p_1:1, p_2: 0}]"]]], []], ["var", [["name", ["value", "shuffleIndex"]], ["value", ["value", 0]]], []], ["var", [["name", ["value", "shufflevalue"]], ["value", ["value", 1]]], []], ["var", [["name", ["value", "iter1"]], ["value", ["value", 0]]], []], ["var", [["name", ["value", "flipvalue1"]], ["value", ["value", 0]]], []], ["var", [["name", ["value", "shufflevalue1"]], ["value", ["value", 1]]], []], ["var", [["name", ["value", "accuracy1"]], ["value", ["value", 0.8]]], []], ["var", [["name", ["value", "points1"]], ["value", ["expression", "[{x:0, y:52}]"]]], []], ["var", [["name", ["value", "endPoints1"]], ["value", ["expression", "[]"]]], []], ["var", [["name", ["value", "probability1"]], ["value", ["expression", "[0,1,0]"]]], []], ["var", [["name", ["value", "pts1"]], ["value", ["expression", "[{p_0:0, p_1:1, p_2: 0}]"]]], []], ["var", [["name", ["value", "shuffleIndex1"]], ["value", ["value", 0]]], []], ["var", [["name", ["value", "shufflevalue1"]], ["value", ["value", 1]]], []], ["var", [["name", ["value", "iter2"]], ["value", ["value", 0]]], []], ["var", [["name", ["value", "flipvalue2"]], ["value", ["value", 0]]], []], ["var", [["name", ["value", "shufflevalue2"]], ["value", ["value", 1]]], []], ["var", [["name", ["value", "points2"]], ["value", ["expression", "[{x:0, y:52}]"]]], []], ["var", [["name", ["value", "endPoints2"]], ["value", ["expression", "[]"]]], []], ["var", [["name", ["value", "probability2"]], ["value", ["expression", "[0,1,0]"]]], []], ["var", [["name", ["value", "pts2"]], ["value", ["expression", "[{p_0:0, p_1:1, p_2: 0}]"]]], []], ["var", [["name", ["value", "accuracy2"]], ["value", ["value", 0.8]]], []], ["var", [["name", ["value", "shuffleIndex2"]], ["value", ["value", 0]]], []], ["var", [["name", ["value", "shufflevalue2"]], ["value", ["value", 1]]], []], ["TextContainer", [], [["Header", [["title", ["value", "Can you win 3-card monte?"]], ["subtitle", ["value", "How a simple card game can separate skill from probability"]], ["author", ["value", "Jithin George, Alex Fang, Richard Yu"]]], []], ["Analytics", [["google", ["value", "UA-42146340-1"]]], []], ["image", [["style", ["expression", "{width: '100%'}"]], ["src", ["value", "static/images/monte.gif"]]], []], ["p", [], ["You walk up to a busy city corner and spot a lone street-magician with three cards on a table.  Interested, you ask him what magic could possibly come out of these cards.  \nHe flips over one of the cards and shows you an ace of spades.  \n ", ["strong", [], ["He asks you for $", "5", ". He proposes to you that if you can keep track of this ace of spades (", ["card", [["number", ["value", "A"]], ["suit", ["value", "S"]]], []], ") he’ll give you $", "1", "0", " back."]], "  ", ["br", [], []]]], ["p", [], ["So, you either lose $5 or win $5. To win at this game, you would need to pick the right card with a probability of 50% or more. Confident in your abilities to track his hands, you believe that will help you have a higher probability of picking the right card. So, you agree to the terms and in an instant he flips the cards over and shuffles the three cards multiple times, and stops, leaving you to select which card is the queen."]], ["aside", [], [["p", [], [["a", [["href", ["value", "https://en.wikipedia.org/wiki/Three-card_Monte"]]], ["The wikipedia page"]], " for three-card monte commonly refers it as a “short con” where the magician would hire accomplices, or shills, to rig the game.  "]], ["p", [], ["This simulation aims to show how even a winning a fair game is random chance after a few shuffles."]]]], ["p", [], [["strong", [], ["So here’s the question:"]], "\n", ["br", [], []], ["em", [], ["How relevant is  your skill in winning tracking the cards as the number of shuffles the magician makes increases just a little?"]], "\n\n"]], ["h2", [], ["Game Setup"]], ["p", [], ["In a typical setup, three cards are laid out on a table, one of which is the “money card”, in this case ", ["card", [["number", ["value", "A"]], ["suit", ["value", "S"]]], []], ", that if kept track of rewards a prize.  "]], ["p", [], ["Selecting one of the other two cards means you lose your bet. "]], ["p", [], ["Let’s say the two loser cards are ", ["card", [["number", ["value", "2"]], ["suit", ["value", "S"]]], []], ", ", ["card", [["number", ["value", "3"]], ["suit", ["value", "S"]]], []], ", and as previously mentioned, the “money card” is the ", ["card", [["number", ["value", "A"]], ["suit", ["value", "S"]]], []], "."]], ["p", [], ["So the game setup looks like this:"]], ["cardVis", [["static", ["value", "True"]]], []], ["p", [], ["Once you see the starting position of the cards, they are flipped over to conceal their faces.  The magician proceeds to shuffle, or swap the position of any two of the three cards, and it is the player’s job to select the ", ["card", [["number", ["value", "A"]], ["suit", ["value", "S"]]], []], " when he finishes."]], ["h2", [], ["Theory"]], ["p", [], ["Uncertainity in this game or at least part of the uncertainty comes from not registering a shuffle in your brain. \nSo, skill in this game can be represented by an accuracy ", ["equation", [], ["\\alpha"]], " that you successfully track a shuffle of two cards.  That is, "]], ["blockquote", [], ["the probability that you know the exact position of the winner card after the shuffle takes place."]], ["p", [], ["Suppose we know that the cards initially  are (", ["card", [["number", ["value", "2"]], ["suit", ["value", "S"]]], []], ", ", ["card", [["number", ["value", "A"]], ["suit", ["value", "S"]]], []], ", ", ["card", [["number", ["value", "3"]], ["suit", ["value", "S"]]], []], "). \nSo, the probabilities of the left , middle and right cards being ", ["card", [["number", ["value", "A"]], ["suit", ["value", "S"]]], []], " are (0,1,0).\nNow, suppose you believe a shuffle happened between the middle and right cards with accuracy ", ["equation", [], ["\\alpha"]], ".\nThe new probabilities would be ", ["equation", [], ["(0,(1-\\alpha)1+\\alpha 0, \\alpha1 + (1-\\alpha)0)"]]]], ["p", [], ["In general, if the initial probabilities were : ", ["equation", [], ["(p_0, p_1, p_2)"]]]], ["p", [], ["And you believed a shuffle happened between the second and third cards, the new probabilities would be:", ["equation", [["display", ["value", true]]], ["(p_0, (1-\\alpha)p_1+\\alpha p_2, (1-\\alpha)p_2+\\alpha p_1)"]]]], ["h2", [], ["Let’s play"]], ["p", [], ["Imagine you had decent accuracy at tracking the shuffles. Say your accuracy is 0.6. Try flipping the cards and shuffling them"]], ["aside", [], ["\nYou have shuffled ", ["strong", [], [["Display", [["value", ["variable", "iter"]], ["format", ["value", "d"]]], []]]], " times.", ["br", [], []], ["button", [["onClick", ["expression", "if(points[points.length-1].y !== 1){ if (flipvalue == 1){flipvalue = 0}else{flipvalue = 1}; shufflevalue = 1}"]]], ["Flip"]], ["button", [["onClick", ["expression", "if(points[points.length-1].y !== 1){iter++;  shufflevalue = 0; shuffleIndex=iter}"]]], ["Shuffle"]], ["multiRiffle", [["iter", ["variable", "iter"]], ["points", ["variable", "points"]]], ["Shuffle (x10)"]], ["p", [], ["\nShuffle Index: ", ["Display", [["value", ["expression", "shuffleIndex.toFixed(0)"]]], []], " ", ["br", [], []], " ", ["Range", [["value", ["variable", "shuffleIndex"]], ["min", ["value", 0]], ["max", ["variable", "iter"]], ["step", ["value", 1]]], []]]]]], ["cardVis", [["iterVar", ["variable", "iter"]], ["points", ["variable", "points"]], ["flipswitch", ["variable", "flipvalue"]], ["shuffleswitch", ["variable", "shufflevalue"]], ["probability", ["variable", "probability"]], ["pts", ["variable", "pts"]], ["accuracy", ["variable", "accuracy"]]], []], ["p", [], ["Here is a chart."]], ["aside", [], [["button", [["className", ["value", "clear"]], ["onClick", ["expression", "{iter= 0; pts = []; probability = [0,1,0]; points = [{x:0,y:52}];flipvalue = 0; shufflevalue =1; shuffleIndex=0}"]]], ["Clear"]], ["barChart", [["pts", ["variable", "pts"]], ["shuffleIndex", ["variable", "shuffleIndex"]]], []]]], ["positionChart", [["iterVal", ["variable", "iter"]], ["endPoints", ["variable", "endPoints"]], ["probability", ["variable", "probability"]], ["pts", ["variable", "pts"]], ["accuracy", ["variable", "accuracy"]]], []], ["p", [], ["So, you see that it only takes a few shuffles after which the probability of all cards go below 0.5. At that point, you lose your advantage and the magician is likely to make money off you. "]], ["h2", [], ["Let’s play with a higher accuracy"]], ["p", [], ["Suppose you were indeed a person of great skill, possessing sharper eyes than most. Your accuracy would be around 0.8. Would that make a difference."]], ["aside", [], ["\nYou have shuffled ", ["strong", [], [["Display", [["value", ["variable", "iter1"]], ["format", ["value", "d"]]], []]]], " times.", ["br", [], []], ["button", [["onClick", ["expression", "if (flipvalue1 == 1){flipvalue1 = 0}else{flipvalue1 = 1}; shufflevalue1 = 1"]]], ["Flip"]], ["button", [["onClick", ["expression", "console.log('rrrr');iter1++;  shufflevalue1 = 0; shuffleIndex1=iter1"]]], ["Shuffle"]], ["p", [], ["\nShuffle Index: ", ["Display", [["value", ["expression", "shuffleIndex1.toFixed(0)"]]], []], " ", ["br", [], []], " ", ["Range", [["value", ["variable", "shuffleIndex1"]], ["min", ["value", 0]], ["max", ["variable", "iter1"]], ["step", ["value", 1]]], []]]]]], ["cardVis", [["iterVar", ["variable", "iter1"]], ["points", ["variable", "points1"]], ["flipswitch", ["variable", "flipvalue1"]], ["shuffleswitch", ["variable", "shufflevalue1"]], ["probability", ["variable", "probability1"]], ["pts", ["variable", "pts1"]], ["accuracy", ["variable", "accuracy1"]]], []], ["p", [], ["Here is a chart."]], ["aside", [], [["button", [["className", ["value", "clear"]], ["onClick", ["expression", "iter1= 0; pts1 = []; probability1 = [0,1,0]; points1 = [{x:0,y:52}];flipvalue1 = 0; shufflevalue1 =1;shuffleIndex1=0"]]], ["Clear"]], ["barChart", [["pts", ["variable", "pts1"]], ["shuffleIndex", ["variable", "shuffleIndex1"]]], []]]], ["positionChart", [["iterVal", ["variable", "iter1"]], ["endPoints", ["variable", "endPoints1"]], ["probability", ["variable", "probability1"]], ["pts", ["variable", "pts1"]], ["accuracy", ["variable", "accuracy1"]]], []], ["p", [], ["You see that regardless of your accuracy it only takes a few more shuffles until the magician takes the advantage from you."]], ["p", [], ["You can play more below by changing the accuracy below, restarting and trying new simulations."]], ["h2", [], ["Let’s play with a variable accuracy"]], ["p", [], ["\nAccuracy: ", ["TextInput", [["value", ["variable", "accuracy2"]]], []], " ", ["button", [["className", ["value", "Clear"]], ["onClick", ["expression", "iter2= 0; pts2 = []; probability2 = [0,1,0]; points2 = [{x:0,y:52}];flipvalue2 = 0; shufflevalue2 =1;shuffleIndex2=0"]]], ["Restart"]]]], ["aside", [], ["\nYou have shuffled ", ["strong", [], [["Display", [["value", ["variable", "iter2"]], ["format", ["value", "d"]]], []]]], " times.", ["br", [], []], ["button", [["onClick", ["expression", "if (flipvalue2 == 1){flipvalue2 = 0}else{flipvalue2 = 1}; shufflevalue2 = 1"]]], ["Flip"]], ["button", [["onClick", ["expression", "console.log('rrrr');iter2++;  shufflevalue2 = 0; shuffleIndex2=iter2"]]], ["Shuffle"]], ["p", [], ["\nShuffle Index: ", ["Display", [["value", ["expression", "shuffleIndex1.toFixed(0)"]]], []], " ", ["br", [], []], " ", ["Range", [["value", ["variable", "shuffleIndex2"]], ["min", ["value", 0]], ["max", ["variable", "iter2"]], ["step", ["value", 1]]], []]]]]], ["cardVis", [["iterVar", ["variable", "iter2"]], ["points", ["variable", "points2"]], ["flipswitch", ["variable", "flipvalue2"]], ["shuffleswitch", ["variable", "shufflevalue2"]], ["probability", ["variable", "probability2"]], ["pts", ["variable", "pts2"]], ["accuracy", ["variable", "accuracy2"]]], []], ["p", [], ["Here is a chart."]], ["aside", [], [["button", [["className", ["value", "clear"]], ["onClick", ["expression", "iter2= 0; pts2 = []; probability2 = [0,1,0]; points2 = [{x:0,y:52}];flipvalue2 = 0; shufflevalue2 =1;shuffleIndex2=0"]]], ["Clear"]], ["barChart", [["pts", ["variable", "pts2"]], ["shuffleIndex", ["variable", "shuffleIndex2"]]], []]]], ["positionChart", [["iterVal", ["variable", "iter2"]], ["endPoints", ["variable", "endPoints2"]], ["probability", ["variable", "probability2"]], ["pts", ["variable", "pts2"]], ["accuracy", ["variable", "accuracy2"]]], []]]]];
+module.exports = [["var", [["name", ["value", "iter"]], ["value", ["value", 0]]], []], ["var", [["name", ["value", "flipvalue"]], ["value", ["value", 0]]], []], ["var", [["name", ["value", "accuracy"]], ["value", ["value", 0.6]]], []], ["var", [["name", ["value", "shufflevalue"]], ["value", ["value", 1]]], []], ["var", [["name", ["value", "points"]], ["value", ["expression", "[{x:0,y:52}]"]]], []], ["var", [["name", ["value", "endPoints"]], ["value", ["expression", "[]"]]], []], ["var", [["name", ["value", "probability"]], ["value", ["expression", "[0,1,0]"]]], []], ["var", [["name", ["value", "pts"]], ["value", ["expression", "[{p_0:0, p_1:1, p_2: 0}]"]]], []], ["var", [["name", ["value", "shufflevalue"]], ["value", ["value", 1]]], []], ["var", [["name", ["value", "shuffleIndex"]], ["value", ["value", 0]]], []], ["var", [["name", ["value", "iter1"]], ["value", ["value", 0]]], []], ["var", [["name", ["value", "flipvalue1"]], ["value", ["value", 0]]], []], ["var", [["name", ["value", "shufflevalue1"]], ["value", ["value", 1]]], []], ["var", [["name", ["value", "accuracy1"]], ["value", ["value", 0.8]]], []], ["var", [["name", ["value", "points1"]], ["value", ["expression", "[{x:0, y:52}]"]]], []], ["var", [["name", ["value", "endPoints1"]], ["value", ["expression", "[]"]]], []], ["var", [["name", ["value", "probability1"]], ["value", ["expression", "[0,1,0]"]]], []], ["var", [["name", ["value", "pts1"]], ["value", ["expression", "[{p_0:0, p_1:1, p_2: 0}]"]]], []], ["var", [["name", ["value", "shufflevalue1"]], ["value", ["value", 1]]], []], ["var", [["name", ["value", "shuffleIndex1"]], ["value", ["value", 0]]], []], ["var", [["name", ["value", "iter2"]], ["value", ["value", 0]]], []], ["var", [["name", ["value", "flipvalue2"]], ["value", ["value", 0]]], []], ["var", [["name", ["value", "shufflevalue2"]], ["value", ["value", 1]]], []], ["var", [["name", ["value", "points2"]], ["value", ["expression", "[{x:0, y:52}]"]]], []], ["var", [["name", ["value", "endPoints2"]], ["value", ["expression", "[]"]]], []], ["var", [["name", ["value", "probability2"]], ["value", ["expression", "[0,1,0]"]]], []], ["var", [["name", ["value", "pts2"]], ["value", ["expression", "[{p_0:0, p_1:1, p_2: 0}]"]]], []], ["var", [["name", ["value", "accuracy2"]], ["value", ["value", 0.8]]], []], ["var", [["name", ["value", "shufflevalue2"]], ["value", ["value", 1]]], []], ["var", [["name", ["value", "shuffleIndex2"]], ["value", ["value", 0]]], []], ["TextContainer", [], [["Header", [["title", ["value", "Can you win 3-card monte?"]], ["subtitle", ["value", "How a simple card game can separate skill from probability"]], ["author", ["value", "Jithin George, Alex Fang, Richard Yu"]]], []], ["Analytics", [["google", ["value", "UA-42146340-1"]]], []], ["image", [["style", ["expression", "{width: '100%'}"]], ["src", ["value", "static/images/monte.gif"]]], []], ["p", [], ["You walk up to a busy city corner and spot a lone street-magician with three cards on a table.  Interested, you ask him what magic could possibly come out of these cards.  \nHe flips over one of the cards and shows you an ace of spades.  \n ", ["strong", [], ["He asks you for $", "5", ". He proposes to you that if you can keep track of this ace of spades (", ["card", [["number", ["value", "A"]], ["suit", ["value", "S"]]], []], ") he’ll give you $", "1", "0", " back."]], "  ", ["br", [], []]]], ["p", [], ["So, you either lose $5 or win $5. Thus, to win the game, you would need to pick the right card with a ", ["strong", [], ["probability of ", "5", "0", "% or more"]], " for a positive expected value of your winnings. Confident in your abilities to track his hands, you believe that will help you have a higher probability of picking the right card. So, you agree to the terms and in an instant he flips the cards over and shuffles the three cards multiple times, and stops, leaving you to select which card is the queen."]], ["aside", [], [["p", [], [["a", [["href", ["value", "https://en.wikipedia.org/wiki/Three-card_Monte"]]], ["The wikipedia page"]], " for three-card monte commonly refers it as a “short con” where the magician would hire accomplices, or shills, to rig the game.  "]], ["p", [], ["This simulation aims to show how even a winning a fair game is random chance after a few shuffles."]]]], ["p", [], [["strong", [], ["So here’s the question:"]], "\n", ["br", [], []], ["em", [], ["How relevant is  your skill in winning tracking the cards as the number of shuffles the magician makes increases just a little?"]], "\n\n"]], ["h2", [], ["Game Setup"]], ["p", [], ["In a typical setup, three cards are laid out on a table, one of which is the “money card”, in this case ", ["card", [["number", ["value", "A"]], ["suit", ["value", "S"]]], []], ", that if kept track of rewards a prize.  "]], ["p", [], ["Selecting one of the other two cards means you lose your bet. "]], ["p", [], ["Let’s say the two loser cards are ", ["card", [["number", ["value", "2"]], ["suit", ["value", "S"]]], []], ", ", ["card", [["number", ["value", "3"]], ["suit", ["value", "S"]]], []], ", and as previously mentioned, the “money card” is the ", ["card", [["number", ["value", "A"]], ["suit", ["value", "S"]]], []], "."]], ["p", [], ["So the game setup looks like this:"]], ["cardVis", [["static", ["value", "True"]]], []], ["p", [], ["Once you see the starting position of the cards, they are flipped over to conceal their faces.  The magician proceeds to shuffle, or swap the position of any two of the three cards, and it is the player’s job to select the ", ["card", [["number", ["value", "A"]], ["suit", ["value", "S"]]], []], " when he finishes."]], ["h2", [], ["Theory"]], ["p", [], ["Uncertainity in this game or at least part of the uncertainty comes from not registering a shuffle in your brain. \nSo, skill in this game can be represented by an accuracy ", ["equation", [], ["\\alpha"]], " that you successfully track a shuffle of two cards.  That is, "]], ["blockquote", [], ["the probability that you know the exact position of the winner card after the shuffle takes place."]], ["p", [], ["Suppose we know that the cards initially  are (", ["card", [["number", ["value", "2"]], ["suit", ["value", "S"]]], []], ", ", ["card", [["number", ["value", "A"]], ["suit", ["value", "S"]]], []], ", ", ["card", [["number", ["value", "3"]], ["suit", ["value", "S"]]], []], "). \nWritten in a tuple, the probabilities of the left, middle, and right cards being the winner, ", ["card", [["number", ["value", "A"]], ["suit", ["value", "S"]]], []], ", are (0,1,0), with the 1 in the middle representing 100% confidence that the winning card is there.\nNow, suppose you believe a shuffle happened between the middle and right cards with accuracy ", ["equation", [], ["\\alpha"]], ".\nThe new probabilities would be ", ["equation", [], ["(0,(1-\\alpha) \\cdot 1+\\alpha \\cdot 0, \\alpha \\cdot 1 + (1-\\alpha) \\cdot 0)"]]]], ["p", [], ["In general, if the initial probabilities were : ", ["equation", [], ["(p_0, p_1, p_2)"]]]], ["p", [], ["And you believed a shuffle happened between the middle and right cards, the new probabilities would be:", ["equation", [["display", ["value", true]]], ["(p_0, (1-\\alpha) \\cdot p_1+\\alpha \\cdot p_2, (1-\\alpha) \\cdot p_2+\\alpha \\cdot p_1)"]]]], ["h2", [], ["Let’s play"]], ["p", [], ["Imagine you had decent accuracy at tracking the shuffles. Say your accuracy is 0.6. Try flipping the cards and shuffling them"]], ["aside", [], ["\nYou have shuffled ", ["strong", [], [["Display", [["value", ["variable", "iter"]], ["format", ["value", "d"]]], []]]], " times.", ["br", [], []], ["button", [["onClick", ["expression", "if(points[points.length-1].y !== 1){ if (flipvalue == 1){flipvalue = 0}else{flipvalue = 1}; shufflevalue = 1}"]]], ["Flip"]], ["button", [["onClick", ["expression", "if(points[points.length-1].y !== 1){iter++;  shufflevalue = 0; shuffleIndex=iter}"]]], ["Shuffle"]], ["button", [["className", ["value", "clear"]], ["onClick", ["expression", "{iter= 0; pts = []; probability = [0,1,0]; points = [{x:0,y:52}];flipvalue = 0; shufflevalue =1; shuffleIndex=0}"]]], ["Clear"]]]], ["cardVis", [["iterVar", ["variable", "iter"]], ["points", ["variable", "points"]], ["flipswitch", ["variable", "flipvalue"]], ["shuffleswitch", ["variable", "shufflevalue"]], ["probability", ["variable", "probability"]], ["pts", ["variable", "pts"]], ["accuracy", ["variable", "accuracy"]]], []], ["p", [], ["Remember, when all probabilities drop under 50% marked by the red dashed line, you’re expected to lose money!"]], ["aside", [], [["barChart", [["pts", ["variable", "pts"]], ["shuffleIndex", ["variable", "shuffleIndex"]]], []], ["p", [["className", ["value", "slider-label"]]], [["strong", [], ["Show a different shuffle:"]], " #", ["Display", [["value", ["expression", "shuffleIndex.toFixed(0)"]]], []], " ", ["br", [], []], " ", ["Range", [["value", ["variable", "shuffleIndex"]], ["min", ["value", 0]], ["max", ["variable", "iter"]], ["step", ["value", 1]]], []]]]]], ["positionChart", [["iterVal", ["variable", "iter"]], ["endPoints", ["variable", "endPoints"]], ["probability", ["variable", "probability"]], ["pts", ["variable", "pts"]], ["accuracy", ["variable", "accuracy"]]], []], ["p", [], ["So, you see that it only takes a few shuffles after which the probability of all cards go below 0.5. At that point, you lose your advantage and the magician is likely to make money off you. "]], ["h2", [], ["Let’s play with a higher accuracy"]], ["p", [], ["Suppose you were indeed a person of great skill, possessing sharper eyes than most. Your accuracy would be around 0.8. Would that make a difference?"]], ["aside", [], ["\nYou have shuffled ", ["strong", [], [["Display", [["value", ["variable", "iter1"]], ["format", ["value", "d"]]], []]]], " times.", ["br", [], []], ["button", [["onClick", ["expression", "if (flipvalue1 == 1){flipvalue1 = 0}else{flipvalue1 = 1}; shufflevalue1 = 1"]]], ["Flip"]], ["button", [["onClick", ["expression", "console.log('rrrr');iter1++;  shufflevalue1 = 0; shuffleIndex1=iter1"]]], ["Shuffle"]], ["button", [["className", ["value", "clear"]], ["onClick", ["expression", "iter1= 0; pts1 = []; probability1 = [0,1,0]; points1 = [{x:0,y:52}];flipvalue1 = 0; shufflevalue1 =1;shuffleIndex1=0"]]], ["Clear"]]]], ["cardVis", [["iterVar", ["variable", "iter1"]], ["points", ["variable", "points1"]], ["flipswitch", ["variable", "flipvalue1"]], ["shuffleswitch", ["variable", "shufflevalue1"]], ["probability", ["variable", "probability1"]], ["pts", ["variable", "pts1"]], ["accuracy", ["variable", "accuracy1"]]], []], ["p", [], ["Remember, when all probabilities drop under 50% marked by the red dashed line, you’re expected to lose money!"]], ["aside", [], [["barChart", [["pts", ["variable", "pts1"]], ["shuffleIndex", ["variable", "shuffleIndex1"]]], []], ["p", [["className", ["value", "slider-label"]]], [["strong", [], ["Show a different shuffle:"]], " #", ["Display", [["value", ["expression", "shuffleIndex1.toFixed(0)"]]], []], " ", ["br", [], []], " ", ["Range", [["value", ["variable", "shuffleIndex1"]], ["min", ["value", 0]], ["max", ["variable", "iter1"]], ["step", ["value", 1]]], []]]]]], ["positionChart", [["iterVal", ["variable", "iter1"]], ["endPoints", ["variable", "endPoints1"]], ["probability", ["variable", "probability1"]], ["pts", ["variable", "pts1"]], ["accuracy", ["variable", "accuracy1"]]], []], ["p", [], ["You see that regardless of your accuracy it only takes a few more shuffles until the magician takes the advantage from you."]], ["p", [], ["You can play more below by changing the accuracy below, restarting and trying new simulations."]], ["h2", [], ["Your turn to experiment", "!"]], ["p", [], ["\nAccuracy: ", ["TextInput", [["value", ["variable", "accuracy2"]]], []], " ", ["button", [["className", ["value", "Clear"]], ["onClick", ["expression", "iter2= 0; pts2 = []; probability2 = [0,1,0]; points2 = [{x:0,y:52}];flipvalue2 = 0; shufflevalue2 =1;shuffleIndex2=0"]]], ["Restart"]]]], ["aside", [], ["\nYou have shuffled ", ["strong", [], [["Display", [["value", ["variable", "iter2"]], ["format", ["value", "d"]]], []]]], " times.", ["br", [], []], ["button", [["onClick", ["expression", "if (flipvalue2 == 1){flipvalue2 = 0}else{flipvalue2 = 1}; shufflevalue2 = 1"]]], ["Flip"]], ["button", [["onClick", ["expression", "console.log('rrrr');iter2++;  shufflevalue2 = 0; shuffleIndex2=iter2"]]], ["Shuffle"]], ["button", [["className", ["value", "clear"]], ["onClick", ["expression", "iter2= 0; pts2 = []; probability2 = [0,1,0]; points2 = [{x:0,y:52}];flipvalue2 = 0; shufflevalue2 =1;shuffleIndex2=0"]]], ["Clear"]]]], ["cardVis", [["iterVar", ["variable", "iter2"]], ["points", ["variable", "points2"]], ["flipswitch", ["variable", "flipvalue2"]], ["shuffleswitch", ["variable", "shufflevalue2"]], ["probability", ["variable", "probability2"]], ["pts", ["variable", "pts2"]], ["accuracy", ["variable", "accuracy2"]]], []], ["p", [], ["Remember, when all probabilities drop under 50% marked by the red dashed line, you’re expected to lose money!"]], ["aside", [], [["barChart", [["pts", ["variable", "pts2"]], ["shuffleIndex", ["variable", "shuffleIndex2"]]], []], ["p", [["className", ["value", "slider-label"]]], [["strong", [], ["Show a different shuffle:"]], " #", ["Display", [["value", ["expression", "shuffleIndex2.toFixed(0)"]]], []], " ", ["br", [], []], " ", ["Range", [["value", ["variable", "shuffleIndex2"]], ["min", ["value", 0]], ["max", ["variable", "iter2"]], ["step", ["value", 1]]], []]]]]], ["positionChart", [["iterVal", ["variable", "iter2"]], ["endPoints", ["variable", "endPoints2"]], ["probability", ["variable", "probability2"]], ["pts", ["variable", "pts2"]], ["accuracy", ["variable", "accuracy2"]]], []]]]];
 
 },{}],"__IDYLL_COMPONENTS__":[function(require,module,exports){
 'use strict';
@@ -97806,15 +97745,14 @@ module.exports = {
 	'equation': require('/home/jithin/Documents/3card_monte/components/default/equation.js'),
 	'display': require('/home/jithin/Documents/3card_monte/components/default/display.js'),
 	'button': require('/home/jithin/Documents/3card_monte/components/default/button.js'),
-	'multi-riffle': require('/home/jithin/Documents/3card_monte/components/multiRiffle.js'),
-	'range': require('/home/jithin/Documents/3card_monte/components/default/range.js'),
 	'bar-chart': require('/home/jithin/Documents/3card_monte/components/barChart.js'),
+	'range': require('/home/jithin/Documents/3card_monte/components/default/range.js'),
 	'position-chart': require('/home/jithin/Documents/3card_monte/components/positionChart.js'),
 	'text-input': require('/home/jithin/Documents/3card_monte/components/default/text-input.js'),
 	'text-container': require('/home/jithin/Documents/3card_monte/components/default/text-container.js')
 };
 
-},{"/home/jithin/Documents/3card_monte/components/barChart.js":"/home/jithin/Documents/3card_monte/components/barChart.js","/home/jithin/Documents/3card_monte/components/card.js":"/home/jithin/Documents/3card_monte/components/card.js","/home/jithin/Documents/3card_monte/components/cardVis.js":"/home/jithin/Documents/3card_monte/components/cardVis.js","/home/jithin/Documents/3card_monte/components/default/analytics.js":"/home/jithin/Documents/3card_monte/components/default/analytics.js","/home/jithin/Documents/3card_monte/components/default/aside.js":"/home/jithin/Documents/3card_monte/components/default/aside.js","/home/jithin/Documents/3card_monte/components/default/button.js":"/home/jithin/Documents/3card_monte/components/default/button.js","/home/jithin/Documents/3card_monte/components/default/display.js":"/home/jithin/Documents/3card_monte/components/default/display.js","/home/jithin/Documents/3card_monte/components/default/equation.js":"/home/jithin/Documents/3card_monte/components/default/equation.js","/home/jithin/Documents/3card_monte/components/default/header.js":"/home/jithin/Documents/3card_monte/components/default/header.js","/home/jithin/Documents/3card_monte/components/default/range.js":"/home/jithin/Documents/3card_monte/components/default/range.js","/home/jithin/Documents/3card_monte/components/default/text-container.js":"/home/jithin/Documents/3card_monte/components/default/text-container.js","/home/jithin/Documents/3card_monte/components/default/text-input.js":"/home/jithin/Documents/3card_monte/components/default/text-input.js","/home/jithin/Documents/3card_monte/components/image.js":"/home/jithin/Documents/3card_monte/components/image.js","/home/jithin/Documents/3card_monte/components/multiRiffle.js":"/home/jithin/Documents/3card_monte/components/multiRiffle.js","/home/jithin/Documents/3card_monte/components/positionChart.js":"/home/jithin/Documents/3card_monte/components/positionChart.js"}],"__IDYLL_CONTEXT__":[function(require,module,exports){
+},{"/home/jithin/Documents/3card_monte/components/barChart.js":"/home/jithin/Documents/3card_monte/components/barChart.js","/home/jithin/Documents/3card_monte/components/card.js":"/home/jithin/Documents/3card_monte/components/card.js","/home/jithin/Documents/3card_monte/components/cardVis.js":"/home/jithin/Documents/3card_monte/components/cardVis.js","/home/jithin/Documents/3card_monte/components/default/analytics.js":"/home/jithin/Documents/3card_monte/components/default/analytics.js","/home/jithin/Documents/3card_monte/components/default/aside.js":"/home/jithin/Documents/3card_monte/components/default/aside.js","/home/jithin/Documents/3card_monte/components/default/button.js":"/home/jithin/Documents/3card_monte/components/default/button.js","/home/jithin/Documents/3card_monte/components/default/display.js":"/home/jithin/Documents/3card_monte/components/default/display.js","/home/jithin/Documents/3card_monte/components/default/equation.js":"/home/jithin/Documents/3card_monte/components/default/equation.js","/home/jithin/Documents/3card_monte/components/default/header.js":"/home/jithin/Documents/3card_monte/components/default/header.js","/home/jithin/Documents/3card_monte/components/default/range.js":"/home/jithin/Documents/3card_monte/components/default/range.js","/home/jithin/Documents/3card_monte/components/default/text-container.js":"/home/jithin/Documents/3card_monte/components/default/text-container.js","/home/jithin/Documents/3card_monte/components/default/text-input.js":"/home/jithin/Documents/3card_monte/components/default/text-input.js","/home/jithin/Documents/3card_monte/components/image.js":"/home/jithin/Documents/3card_monte/components/image.js","/home/jithin/Documents/3card_monte/components/positionChart.js":"/home/jithin/Documents/3card_monte/components/positionChart.js"}],"__IDYLL_CONTEXT__":[function(require,module,exports){
 
 module.exports = function () {
 

@@ -556,3 +556,24 @@ blockquote {
 		margin-left: 0 !important;
 	}
 }
+
+.position-container {
+	width: 700px;
+	height: 300px;
+}
+
+.bar-container {
+	width: 700px;
+	height: 300px;
+}
+
+.probability-line {
+	position: absolute;
+	height: 300px;
+	width: 630px;
+	z-index: 1;
+}
+
+.slider-label {
+	text-align: center;
+}

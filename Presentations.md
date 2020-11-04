@@ -7,6 +7,7 @@ permalink: /Presentations/
 
 
 Some of my presentations on interesting topics:
+* [Trilateration-based multilevel method for minimizing the Lennard-Jones potential.](pdfs/MLLJ_presentation_CASSC.pdf)
 * [Exploration of chaos in shock waves](pdfs/Chaos.pdf)
 
 Click on movie to see the videos.

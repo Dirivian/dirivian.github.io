@@ -14,4 +14,4 @@ permalink: /education/
 
 
 
-You can find more information in my [CV](pdfs/CV_Jithin_Nov2020.pdf).
+You can find more information in my [CV](pdfs/CV_Jithin_Nov2021.pdf).

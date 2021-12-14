@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Background
-permalink: /education/
+title: Bio
+permalink: /bio/
 ---
 
 ### Education

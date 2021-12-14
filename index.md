@@ -1,12 +1,10 @@
 ---
 layout: default
 ---
-Double periodic solutions in detonation waves.
 
+Double periodic solutions in detonation waves and well-balanced numerical schemes for the rising thermal bubble.
 
-Another line                                                     
-Another line
 <video src="/images/erit.mp4" controls="controls" style="max-width: 350px;">
 </video>
-<video src="/images/erit.mp4" controls="controls" style="max-width: 350px;">
+<video src="/images/bubble.mp4" controls="controls" style="max-width: 350px;">
 </video>

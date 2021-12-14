@@ -13,3 +13,5 @@ data-setup="{}">
 Another line
 <video src="/images/erit.mp4" controls="controls" style="max-width: 150px;">
 </video>
+<video src="/images/erit.mp4" controls="controls" style="max-width: 150px;">
+</video>

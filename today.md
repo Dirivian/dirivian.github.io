@@ -4,7 +4,7 @@ permalink: /today/
 ---
 
 
-
+![Alt Text](pages/animation.gif)
 ![Drag Racing](box1.png)
 
 ![Drag Racing](triangle.png)

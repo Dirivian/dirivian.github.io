@@ -7,7 +7,7 @@ GP_IPA matches IPA/DPA well while being different. It is pretty similar except t
 
 ### With Bias
 
-With Bias, we see that GP_IPA behaves way better than DPA and the previous iteration of GP and is somewhat in the between. The unbiased problem of acquired a slightly different gradient than IPA is visible here.
+With Bias, we see that at final time, GP_IPA behaves way better than DPA and the previous iteration of GP and is somewhat in the between. The unbiased problem of acquired a slightly different gradient than IPA is visible here.
 
 ![Alt Text](GP_bias.png)
 

@@ -14,4 +14,4 @@ permalink: /bio/
 
 
 
-You can find more information in my [CV](pdfs/CV_Jithin_Nov2021.pdf).
+You can find more information in my [CV](pdfs/CV_Jithin_Sep2022.pdf).

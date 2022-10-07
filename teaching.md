@@ -8,8 +8,8 @@ permalink: /teaching/
 
 I have been a Teaching Assistant (TA) at Northwestern and the University of Washington for the following courses.
 
-* [ES_APPM 252-1: Honors Calculus for Engineers]([https://www.mccormick.northwestern.edu/applied-math/academics/courses/descriptions/252-1-2.html]):
- You can find coding content I developed for this class [here]([https://github.com/Dirivian/Honors_Calc_Fall_2020])
+* [ES_APPM 252-1: Honors Calculus for Engineers](https://www.mccormick.northwestern.edu/applied-math/academics/courses/descriptions/252-1-2.html):
+ You can find coding content I developed for this class [here](https://github.com/Dirivian/Honors_Calc_Fall_2020)
  
 * [MATH 228 - Multiple Integration and Vector Calculus](https://www.mccormick.northwestern.edu/applied-math/academics/courses/descriptions/228-2-1.html):
  

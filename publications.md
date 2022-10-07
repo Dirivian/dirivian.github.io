@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Publications
-permalink: /pubs/
+title: Research
+permalink: /research/
 ---
+
+A full list of my publications can be found on [Google Scholar](https://scholar.google.com/citations?user=-Go8DD4AAAAJ&hl=en) or in my [CV](pdfs/CV_Jithin_Sep2022.pdf).
 * Jithin D. George, David I. Ketcheson, and Randall J. LeVeque. "[Shoaling on Steep Continental Slopes: Relating Transmission and Reflection Coefficients to Green's Law.](https://arxiv.org/abs/1901.04148)" .
 
 * Jithin D. George, David I. Ketcheson, and Randall J. LeVeque. "[A characteristics-based approximation for wave scattering from an arbitrary obstacle in one dimension.](https://arxiv.org/abs/1901.04158)" .

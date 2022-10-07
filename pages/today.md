@@ -1,3 +1,8 @@
+---
+layout: default
+permalink: /pages/today/
+---
+
 ### Without Bias
 
 GP_IPA matches IPA/DPA well while being different. It is pretty similar except towards the end (index 470 to 540) when it acquires a wrong gradient

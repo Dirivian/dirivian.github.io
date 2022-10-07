@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: page
 permalink: /pages/today/
 ---
+
 
 ### Without Bias
 

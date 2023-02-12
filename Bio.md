@@ -4,7 +4,7 @@ title: Bio
 permalink: /bio/
 ---
 
-I'm a PhD candidate in applied math at Northwestern University. You can find more information in my [CV](pdfs/CV_Jithin_Sep2022.pdf).
+I'm a PhD candidate in applied math at Northwestern University. You can find more information in my [CV](pdfs/CV_Jithin_Nov2022.pdf).
 
 ### Education
 

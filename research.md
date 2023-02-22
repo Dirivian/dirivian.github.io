@@ -6,7 +6,7 @@ permalink: /research/
 
 Here are a few of my research highlights. A full list of my publications can be found on [Google Scholar](https://scholar.google.com/citations?user=-Go8DD4AAAAJ&hl=en) or in my [CV](pdfs/CV_Jithin_Nov2022.pdf).
 
-[Paths in the complex plane for timeintegrators](https://arxiv.org/abs/2110.04402)            |  [A visual way to teach the Fast Fourier Transform.](https://sinews.siam.org/Details-Page/a-visual-way-to-teach-the-fast-fourier-transform)
+[Paths in the complex plane for time integrators](https://arxiv.org/abs/2110.04402)            |  [A visual way to teach the Fast Fourier Transform.](https://sinews.siam.org/Details-Page/a-visual-way-to-teach-the-fast-fourier-transform)
 :-------------------------:|:-------------------------:
 ![](pp1.jpg)  |  ![](pp4.jpg)
 

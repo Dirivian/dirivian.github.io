@@ -12,7 +12,7 @@ Here are a few of my research highlights. A full list of my publications can be 
 
 [Mysteries in the amplification of ocean waves](https://arxiv.org/abs/1901.04148)            |  [An asymptotic series solution to the wave equation in non-homgeneous media](https://arxiv.org/abs/1901.04158)
 :-------------------------:|:-------------------------:
-![](pp6.png)  |  ![](pp3.jpg)
+<img src="pp6.png" width=500 height=170> | ![](pp3.jpg)
 
 [Spectral methods for boundary layers in electrocatalysis]()            |  [Fast ways to find optimal locations of atoms](https://link.springer.com/chapter/10.1007/978-3-030-50426-7_13)
 :-------------------------:|:-------------------------:

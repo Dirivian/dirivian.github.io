@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<img align="right" width="180" height="252" src="/images/head_shot.JPG" />
+<img align="left" width="180" height="252" src="/images/head_shot.JPG" />
 
 I am an Applied Math Ph.D candidate at **Northwestern University**. Previously at the University of Washington, BITS-Pilani and TIFR-CAM. 
 You can find more information in my **[CV](pdfs/CV_Jithin_Nov2022.pdf)**.

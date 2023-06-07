@@ -26,13 +26,13 @@ The chaotic case can be seen [here[(https://www.youtube.com/watch?v=BFadoM801yg)
 
 #### **Interactive visualization of the 3-card monte**
 
-Click [here](https://dirivian.github.io/pages/monte/) for an interactive story using math to show that the 3-card monte is not really a game of skill.
+[Click here for an interactive story](https://dirivian.github.io/pages/monte/) using math to show that the 3-card monte is not really a game of skill.
 
 #### **Fireflies in the night sky**
 
 Fireflies sync up their flashes. Their flashes are periodic and the best way to see their behaviour is by plotting their blinks on a circle.
 <p align="center">
-<video src="/images/fireflies.mp4" height="250" controls="controls" style="max-width: 300px;">
+<video src="/images/fireflies.mp4" height="300" width="400 controls="controls" style="max-width: 300px;">
 </video>
 </p >
 

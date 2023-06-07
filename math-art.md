@@ -32,7 +32,7 @@ Click [here](https://dirivian.github.io/pages/monte/) for an interactive story u
 
 Fireflies sync up their flashes. Their flashes are periodic and the best way to see their behaviour is by plotting their blinks on a circle.
 <p align="center">
-<video src="/images/fireflies.mp4" controls="controls" style="max-width: 300px;">
+<video src="/images/fireflies.mp4" height="250" controls="controls" style="max-width: 300px;">
 </video>
 </p >
 

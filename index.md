@@ -1,15 +1,14 @@
 ---
 layout: default
 ---
-I am an Applied Math Ph.D candidate at **Northwestern University**. Did my Masters in applied mathematics at the University of Washington and my Bachelors in Mechanical Engineering from BITS-Pilani. Worked for a year in between at the Tata Institute of Fundamental Research, Centre for Applicable Mathematics.
+
+<img align="right" width="250" src="/images/head_shot.JPG" />
+
+I am an Applied Math Ph.D candidate at **Northwestern University**. Previously at the University of Washington, BITS-Pilani and TIFR-CAM. 
 You can find more information in my **[CV](pdfs/CV_Jithin_Nov2022.pdf)**.
 
-My research interests revolve around a theme of **elegant scientific computing**. This includes beautiful analytic techniques (contour deformations, asymptotic expansions), insightful numerical methods (spectral methods and low rank representations), clever algorithms and their applications. Please contact me if you are interested in working on anything related to these topics.
+My research interests revolve around a theme of **elegant scientific computing**. I like to work on topics that feature beautiful analytic techniques (contour deformations, asymptotic expansions), insightful numerical methods (spectral methods and low rank representations), clever algorithms and their applications. Always up for discussing anything related to these topics. Click [here](research.md) to see my research highlights and [here](math-art.md) to see some pretty visualizations.
 
 
 
 
-<p align="center">
-<video src="/images/bubble.mp4" controls="controls" style="max-width: 300px;">
-</video>
-</p >

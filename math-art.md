@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Art
 permalink: /math-art/
 ---
 I love making pretty plots. Here's a (disordered) collection of visualization I've made that I'm proud of enough to put on here.
